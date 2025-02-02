@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #262626;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 400px;
+  margin-right: 10px;
+  border-bottom: 2px solid #33cc33;
+}
+
+button:disabled {
+  background-color: #1a1a1a;
+  color: #444;
+  cursor: not-allowed;
+}
+
+button:enabled {
+  background-color: #33cc33;
+}
+
+button:hover {
+  background-color: #66ff66;
+}
+
+/* Status messages */
+.status {
+  margin-top: 20px;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Smooth transition for color change */
+}
+
+.status.success {
+  color: #66ff66; /* Green for success */
+}
+
+.status.error {
+  color: #ff6666; /* Red for error */
+}
+
+.status.hidden {
+  visibility: hidden;
+}
